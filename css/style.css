@@ -1,0 +1,354 @@
+/* based */
+
+body {
+	font-family: 'Exo 2';
+}
+
+/* blocks */
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.button {
+	padding: 17px 44px;
+	border-radius: 50px;
+
+	font-family: 'Exo 2';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+
+	color: white;
+	background-color: #FF6A3B;
+
+	transition: .3s;
+}
+
+.button:hover {
+	background-color: #dd5a32;
+}
+
+.button:active {
+	background-color: #be4e2c;
+}
+
+.main__button--mt33 {
+	margin-top: 33px;
+}
+
+@media (max-width: 480px) {
+	.button {
+		width: 100%;
+	}
+}
+
+/* header */
+
+.header {
+	padding: 18px 0;
+	position: relative;
+	z-index: 12;
+}
+
+.header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__left {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	width: 161px;
+	height: 68px;
+	margin-right: 34px;
+}
+
+.header__title {
+	max-width: 199px;
+	font-family: 'Exo 2';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 132.9%;
+}
+
+.header__right {
+	display: flex;
+}
+
+.header__contacts {
+	display: flex;
+}
+
+.header__contacts-item {
+	display: flex;
+	align-items: center;
+	margin-right: 29px;
+}
+
+.header__contacts-ico {
+	width: 16px;
+	height: 16px;
+	margin-right: 9px;
+}
+
+.header__contacts-info {
+	font-family: 'Exo 2';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	cursor: pointer;
+	transition: .2s;
+	color: black;
+}
+
+.header__contacts-info:hover {
+	color: #dd5a32;
+}
+
+.header__contacts-info:active {
+	color: #be4e2c;
+}
+
+.header__social-media {
+	display: flex;
+	align-items: center;
+	margin-right: 29px;
+}
+
+.header__social-media-ico {
+	cursor: pointer;
+}
+
+.header__social-media-ico--1 {
+	height: 29px;
+	width: 18px;
+}
+
+.header__social-media-ico--2 {
+	height: 20px;
+	width: 20px;
+}
+
+.header__social-media-link + .header__social-media-link {
+	margin-left: 7px;
+}
+
+/* header media */
+
+@media(max-width: 1330px) {
+	.header__contacts {
+		display: block;
+	}
+}
+
+@media(max-width: 960px) {
+	.header__title {
+		display: none;
+	}
+}
+
+@media(max-width: 750px) {
+	.header__left {
+		display: block;
+	}
+
+	.header__title {
+		display: block;
+	}
+
+	.header__right {
+		display: block;
+	}
+}
+
+@media(max-width: 480px) {
+	.header__wrapper {
+		display: block;
+		text-align: center;
+	}
+
+	.header__logo-link {
+		margin-bottom: 7px;
+	}
+
+	.header__title {
+		max-width: 100%;
+		margin-bottom: 16px;
+	}
+
+	.header__contacts {
+		display: inline-block;
+	}
+
+	.header__contacts-item {
+		margin-right: 0;
+		margin-bottom: 9px;
+	}
+
+	.header__social-media {
+		display: block;
+		margin-bottom: 9px;
+	}
+}
+
+/* main */
+
+.main {
+	position: relative;
+	background-image: url('../img/main/main.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 66px 0 91px;
+	color:white;
+}
+
+.main__wrapper {
+	display: flex;
+
+}
+
+.main__left {
+	text-align: center;
+}
+
+.main__decorate-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main__decorate-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.main__subtitle {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.main__title {
+	font-weight: 600;
+	font-size: 100px;
+	line-height: 133px;
+}
+
+@media (max-width: 950px) {
+	.main__wrapper {
+		display: block;
+	}
+
+	.main__decorate-right {
+		display: none;
+	}
+}
+
+@media (max-width: 430px) {
+	.main__subtitle {
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.main__title {
+		font-size: 78px;
+		line-height: 104px;
+	}
+}
+
+/* main media */
+
+/* benefits */
+
+.benefits {
+	padding: 67px 0 100px;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	z-index: 12;
+}
+
+.benefits__title {
+	font-family: 'Exo 2';
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 127.9%;
+}
+
+.benefits__title--orange {
+	color: #FF6A3B;
+}
+
+.benefits__items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin-top: 95px;
+}
+
+.benefits__item-ico {
+	height: 66px;
+	width: 66px;
+	margin-bottom: 43px;
+}
+
+.benefits__item-title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.benefits__item-subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+@media (max-width: 950px) {
+	.benefits {
+		padding: 20px 0 65px;
+	}
+
+	.benefits__items {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 50px;
+		margin-top: 65px;
+	}
+
+	.benefits__item-ico {
+		margin-bottom: 20px;
+	}
+
+	.benefits__item-title {
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 780px) {
+	.benefits {
+		padding: 20px 0 40px;
+	}
+
+	.benefits__title {
+		font-size: 25px;
+	}
+
+	.benefits__items {
+		grid-template-columns: 1fr;
+		row-gap: 50px;
+		margin-top: 30px;
+	}
+}
+
+/* benefits media */
